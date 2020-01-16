@@ -1,0 +1,16 @@
+body {
+    background-color: aquamarine;
+}
+
+b.phone {
+    color: darkorange;
+    font-size: xx-large;
+}
+
+b.name {
+    font-size: 6em;
+    color: rgba(255, 166, 0, 0.904);
+}
+
+header {
+}
