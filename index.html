@@ -1,67 +1,33 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+
 <html>
-	<head><title>Task 3</title>
-	<meta charset="utf-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<!--https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js-->
-	</head>
-	<body>
-		<div id='root'>
-		</div>
-		<script>
 
-$('#root').html("<ul></ul>");
-$('ul').html("<li id='li1'></li>");
-$('#li1').html("<span>Сделать задание #3 по web-программированию</span> <input type='button' value='Удалить' id='button1'>");
-//$('#li1').append("<input type='button' value='Удалить' id='button1'>");
+    <head>
 
-$('#root').append('<input type="text" id="add_task_input">  <input type="button" id="add_task" value="Добавить элемент в список"> ');
+        <title> Детский садик</title>
+        <link rel="shortcut icon" href="fav1.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
 
-$('#add_task').click(function(){
-	var inputVal = $('#add_task_input').val();
-	$('ul').append("<li> <span>" + inputVal + "</span> <input type='button' value='Удалить'> </li>");
-	//$('#li2').html("<span>" + inputVal + "</span> <input type='button' value='Удалить' class='button2'>");
-	
-	
-	var i=0;
-    $("ul li").each(function(){
-        i++;
-    $(this).attr("id","li"+i);  
-    });
-	
-	var i=0;
-    $("ul li input").each(function(){
-        i++;
-    $(this).attr("id","button"+i);  
-    });
-	
-	$('#button1').click(function(){
-	$('#li1').remove(); });
-	$('#button2').click(function(){
-	$('#li2').remove(); });
-	$('#button3').click(function(){
-	$('#li3').remove(); });
-	$('#button4').click(function(){
-	$('#li4').remove(); });
-	$('#button5').click(function(){
-	$('#li5').remove(); });
-	$('#button6').click(function(){
-	$('#li6').remove(); });
-	$('#button7').click(function(){
-	$('#li7').remove(); });
-	$('#button8').click(function(){
-	$('#li8').remove(); });
-	$('#button9').click(function(){
-	$('#li9').remove();
-});
-});
+    </head>
+
+
+    <body>
+        <header>
+            <a href="app.html"> 
+                <img src="flower.jpg" width="10%" height="10%" align="left">
+            </a>
+            <div align="right">
+                <b class="phone">8 (800) 555-35-35</b> <br>
+                <small>Звонок по России бесплатный</small>
+            </div>
+            <div align="center">
+                <b class="name">Детский садик - Карапузяо</b>
+            </div>
+        </header>
 
 
 
-$('#button1').click(function(){
-	$("#li1").remove();
-});
 
-		</script>
-	</body>
+    </body>
+
 </html>
